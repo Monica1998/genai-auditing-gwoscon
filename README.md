@@ -1,6 +1,6 @@
 # Open Source Auditing for Generative AI - Static Webpage
 
-This folder contains a static webpage ready for GitHub Pages hosting.
+This repository contains a static webpage ready for GitHub Pages hosting.
 
 ## Quick Personalization
 
@@ -15,16 +15,15 @@ You can open `index.html` directly in your browser, or use any local static serv
 
 ## Publish on GitHub Pages (Free)
 
-1. Create a new public GitHub repository.
-2. Upload all files in this folder (`index.html`, `styles.css`, `script.js`, `README.md`).
-3. In your repository, open **Settings** > **Pages**.
-4. Under **Build and deployment**, set:
-   - **Source**: `Deploy from a branch`
-   - **Branch**: `main` (or `master`) and `/ (root)`
-5. Save and wait 1-2 minutes for deployment.
-6. Your site will be live at:
-   `https://<your-github-username>.github.io/<repository-name>/`
+This repo includes a GitHub Actions workflow that deploys the site automatically on every push to `main`.
+
+1. Push this repository to GitHub.
+2. In GitHub, open **Settings** > **Pages**.
+3. Under **Build and deployment**, set **Source** to `GitHub Actions`.
+4. Wait for the workflow named `Deploy Static Site to GitHub Pages` to finish.
+5. Your site will be live at:
+   `https://Monica1998.github.io/genai-auditing-gwoscon/`
 
 ## Optional
 
-If you want the webpage to open directly at the root URL, keep the main file name as `index.html`.
+If you want the site at the root URL `https://Monica1998.github.io/`, the repository must be renamed to `Monica1998.github.io`.
